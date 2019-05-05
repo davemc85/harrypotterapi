@@ -1,12 +1,12 @@
 <template lang="html">
-  <div id="character-info" v-if="character">
-    <h1>{{character.name}}</h1>
-    <img id="large_pic" :src="character.image"/>
-    <h2>House: {{character.house}}</h2>
-    <p>Date of Birth: {{character.dateOfBirth}}</p>
-    <p>Ancestry: {{character.ancestry}}</p>
-    <p>Patronus: {{character.patronus}}</p>
-    <p>Played By: {{character.actor}}</p>
+  <div id="professor-info" v-if="professor">
+    <h1>{{professor.name}}</h1>
+    <img id="large_pic" :src="professor.image"/>
+    <h2>House: {{professor.house}}</h2>
+    <p>Date of Birth: {{professor.dateOfBirth}}</p>
+    <p>Ancestry: {{professor.ancestry}}</p>
+    <p>Patronus: {{professor.patronus}}</p>
+    <p>Played By: {{professor.actor}}</p>
     <br><br><br><br><br><br><br><br><br><br><br>
   </div>
 </template>
@@ -15,9 +15,9 @@
 import Header from '@/components/Header.vue'
 export default {
   components: {Header},
-  props: ['character'],
+  props: ['professor'],
   mounted(){
-    if(!this.character) this.$router.push('/');
+    if(!this.professor) this.$router.push('/');
   }
 }
 </script>
@@ -34,9 +34,9 @@ export default {
 }
 
 h1  {
-  text-align: center;
   font-size: 50pt;
-  color: white;
+  color:white;
+  text-align: center;
 }
 
 h2 {
@@ -46,6 +46,5 @@ h2 {
 p {
   color: white;
 }
-
 
 </style>

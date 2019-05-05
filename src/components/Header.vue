@@ -12,4 +12,10 @@ export default {
 h1 {
   font: 50px tahoma;
 }
+
+#header-container{
+  display: flex;
+  justify-content: center;
+}
+
 </style>

@@ -1,7 +1,9 @@
 <template lang="html">
   <div id="main">
     <NavBar/>
-    <Header text="Harry Potter Characters"/>
+    <br>
+    <br>
+    <br>
     <router-view id="view"/>
   </div>
 </template>
@@ -16,4 +18,10 @@ export default {
 </script>
 
 <style lang="css" scoped>
+
+#view {
+  font-family: 'Sofia', cursive;
+  background-color: black;
+}
+
 </style>
